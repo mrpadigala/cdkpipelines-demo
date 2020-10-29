@@ -31,7 +31,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
         actionName: 'GitHub',
         output: sourceArtifact,
         oauthToken: oauthToken,
-        owner: 'mrvindu',
+        owner: 'mrpadigala',
         repo: 'cdkpipelines-demo',
         branch: 'develop',
       }),
