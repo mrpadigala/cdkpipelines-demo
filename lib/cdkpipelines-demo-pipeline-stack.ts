@@ -15,7 +15,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
 
     const sourceArtifact = new codepipeline.Artifact();
     const cloudAssemblyArtifact = new codepipeline.Artifact();
-    const oauthToken = SecretValue.secretsManager('/cdkpipelines-demo-pipeline-stack/github/token', {jsonField: 'github-token'});
+    const oauthToken = SecretValue.secretsManager('/mr-padigala/github/token', {jsonField: 'github-token'});
     // const EnvironmentAccount = SecretValue.secretsManager('/plt/environment/account', {jsonField: 'EnvironmentAccount'});
     // const RepoBranch = SecretValue.secretsManager('/plt/github/branch', {jsonField: 'RepoBranch'});
     // const EnvironmentAccount = StringParameter.valueFromLookup(this, "/plt/environment/account");
@@ -33,7 +33,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
         oauthToken: oauthToken,
         owner: 'mrvindu',
         repo: 'cdkpipelines-demo',
-        branch: 'master',
+        branch: 'develop',
       }),
 
        // How it will be built and synthesized
